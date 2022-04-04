@@ -1,3 +1,7 @@
+layout: page
+title: "Pixel"
+permalink: /pixel.json/
+
 {
     "version": 0,
     "structures": {
