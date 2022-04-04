@@ -1,6 +1,6 @@
 layout: page
 title: "Pixel"
-permalink: /pixel.json/
+permalink: /pixel/
 
 {
     "version": 0,
