@@ -1,3 +1,7 @@
+layout: page
+title: "SFG r/place bot"
+permalink: /sfg-place-bot/
+
 {
     "version": 0,
     "structures": {
