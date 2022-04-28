@@ -1,0 +1,9 @@
+body {
+  background-color: black; 
+  margin: 50px 5% 100px 5%; 
+  font-family: Helvetica, Arial, sans-serif; 
+  color: white;
+}
+h1 {
+  color: orange; 
+}
