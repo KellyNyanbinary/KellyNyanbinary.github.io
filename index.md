@@ -1,5 +1,5 @@
 ---
-layout: title
+layout: page
 title: KellyNyanbinary
 ---
 
