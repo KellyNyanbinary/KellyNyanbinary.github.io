@@ -3,11 +3,12 @@ body {
   margin: 50px 5% 100px 5%;
   font-family: Helvetica, Arial, sans-serif;
   color: white;
+  font-size: 1vw;
 }
 
-h1 {
+.title {
   color: orange;
-  font-size: 4em;
+  font-size: 4vw;
   text-align: center;
   padding-bottom: 1vh;
   border-bottom: 0.1em solid white;
@@ -15,7 +16,6 @@ h1 {
 
 h2 {
   color: orange;
-  margin-top: 2%;
 }
 
 h4 {
