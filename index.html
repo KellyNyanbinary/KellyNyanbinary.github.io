@@ -23,13 +23,24 @@
   </head>
 
   <body id="main">
-    <div id='testdiv' style='height: 1in; left: -100%; position: absolute; top: -100%; width: 1in;'></div>
+    <div
+      id="testdiv"
+      style="
+        height: 1in;
+        left: -100%;
+        position: absolute;
+        top: -100%;
+        width: 1in;
+      "
+    ></div>
     <script type="text/javascript">
       var devicePixelRatio = window.devicePixelRatio || 1;
       dpi_x = document.getElementById("testdiv").offsetWidth * devicePixelRatio;
-      dpi_y = document.getElementById("testdiv").offsetHeight * devicePixelRatio;
+      dpi_y =
+        document.getElementById("testdiv").offsetHeight * devicePixelRatio;
 
-      main.style.fontSize = dpi_x / 5 + "px";
+      //Average DPI and default font size.
+      main.style.fontSize = (dpi_x / 5 + 16) / 2 + "px";
       console.log(dpi_x, dpi_y, main.style.fontSize);
     </script>
 
