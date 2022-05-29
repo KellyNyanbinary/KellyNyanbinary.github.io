@@ -23,6 +23,16 @@
   </head>
 
   <body id="main">
+    <div id='testdiv' style='height: 1in; left: -100%; position: absolute; top: -100%; width: 1in;'></div>
+    <script type="text/javascript">
+      var devicePixelRatio = window.devicePixelRatio || 1;
+      dpi_x = document.getElementById("testdiv").offsetWidth * devicePixelRatio;
+      dpi_y = document.getElementById("testdiv").offsetHeight * devicePixelRatio;
+
+      main.style.fontSize = dpi_x / 5 + "px";
+      console.log(dpi_x, dpi_y, main.style.fontSize);
+    </script>
+
     <h1 class="title">Kelly's Website</h1>
 
     <div>
@@ -41,7 +51,7 @@
 
       <h4>Age</h4>
       18
-      
+
       <h4>Birthday</h4>
       February 23
     </div>
