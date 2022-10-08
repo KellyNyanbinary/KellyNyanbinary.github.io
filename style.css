@@ -14,6 +14,12 @@ body {
   text-align: center;
 }
 
+.secondarypagetitle {
+  display: flex;
+  color: orange;
+  justify-content: center;
+}
+
 h2 {
   color: orange;
 }
@@ -21,4 +27,9 @@ h2 {
 h4 {
   color: #fc6;
   margin-bottom: 0.2em;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
 }
