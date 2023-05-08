@@ -18,10 +18,17 @@ body {
   display: flex;
   color: orange;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 h2 {
   color: orange;
+}
+
+h3 {
+  color: #fc6;
+  margin-bottom: 0.2em;
 }
 
 h4 {
