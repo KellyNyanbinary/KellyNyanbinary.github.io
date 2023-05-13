@@ -1,5 +1,9 @@
-body {
+:root {
+  color-scheme: dark;
   background-color: black;
+}
+
+body {
   margin: 0px 5% 100px 5%;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
