@@ -12,7 +12,7 @@ body {
 .maintitle {
   display: flex;
   color: orange;
-  height: 100vh;
+  height: 100dvh;
   justify-content: center;
   align-items: center;
   text-align: center;
