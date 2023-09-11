@@ -1,6 +1,11 @@
 :root {
   color-scheme: dark;
   background-color: black;
+  --kelly-orange: #ff8000;
+  --kelly-light-orange: #de9143;
+  --kelly-lighter-orange: #FFE2C2;
+  --kelly-dark-orange: #8F4700;
+  --kelly-darker-orange: #4D2800;
 }
 
 body {
@@ -11,7 +16,7 @@ body {
 
 .maintitle {
   display: flex;
-  color: orange;
+  color: var(--kelly-orange);
   height: 100dvh;
   justify-content: center;
   align-items: center;
@@ -20,27 +25,58 @@ body {
 
 .secondarypagetitle {
   display: flex;
-  color: orange;
+  color: var(--kelly-orange);
+  height: 20dvh;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
+h1 {
+  font-size: 3vmax;
+}
+
 h2 {
-  color: orange;
+  color: var(--kelly-orange);
 }
 
 h3 {
-  color: #fc6;
+  color: var(--kelly-light-orange);
   margin-bottom: 0.2em;
 }
 
 h4 {
-  color: #fc6;
+  color: var(--kelly-light-orange);
   margin-bottom: 0.2em;
 }
 
-a, a:hover, a:focus, a:active {
-  text-decoration: none;
-  color: inherit;
+a {
+  display: inline-block; /* Allows padding to be applied */
+  padding: 0.1em 0.2em; /* Space around the link text */
+  border: 2px solid var(--kelly-dark-orange); /* Border around the link */
+  border-radius: 0.4em; /* Rounded corners */
+  background-color: var(--kelly-dark-orange); /* Background color */
+  text-decoration: none; /* Removes the default underline */
+  color: var(--kelly-lighter-orange); /* Text color */
+  margin: 2px; /* Space between links */
+  transition: 0.3s; /* Smooth transition for hover effect */
+}
+
+a:hover, a:focus {
+  font-size: 110%;
+  border-color: var(--kelly-orange); /* Border color on hover */
+  background-color: var(--kelly-orange); /* Background color on hover */
+  color: white; /* Text color on hover */
+}
+
+a:active {
+  font-size: 90%;
+  border-color: var(--kelly-darker-orange); /* Border color on hover */
+  background-color: var(--kelly-darker-orange); /* Background color on hover */
+  color: var(--kelly-light-orange); /* Text color on hover */
+}
+
+a:focus {
+  outline: solid var(--kelly-orange);
+  outline-offset: -0.02em;
 }
