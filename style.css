@@ -5,6 +5,7 @@
     --primary: hsl(30, 100%, 50%);
     --secondary: hsl(30, 60%, 40%);
     --accent: hsl(200, 100%, 80%);
+    --link: hsl(200, 100%, 20%);
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -14,30 +15,22 @@
     --primary: hsl(30, 100%, 50%);
     --secondary: hsl(30, 60%, 60%);
     --accent: hsl(200, 100%, 20%);
+    --link: hsl(200, 100%, 80%);
   }
 }
 
 :root {
-  /* color-scheme: dark; */
-  /* background-color: black; */
   background-color: var(--background);
-  --kelly-orange: #ff8000;
-  --kelly-light-orange: #de9143;
-  --kelly-lighter-orange: #ffe2c2;
-  --kelly-dark-orange: #8f4700;
-  --kelly-darker-orange: #4d2800;
 }
 
 body {
   margin: 0px 5% 100px 5%;
   font-family: Arial, Helvetica, sans-serif;
-  /* color: white; */
   color: var(--text);
 }
 
 .maintitle {
   display: flex;
-  /* color: var(--kelly-orange); */
   color: var(--primary);
   height: 100dvh;
   justify-content: center;
@@ -47,7 +40,6 @@ body {
 
 .secondarypagetitle {
   display: flex;
-  /* color: var(--kelly-orange); */
   color: var(--primary);
   height: 20dvh;
   justify-content: center;
@@ -60,29 +52,26 @@ h1 {
 }
 
 h2 {
-  /* color: var(--kelly-orange); */
   color: var(--primary);
 }
 
 h3 {
-  /* color: var(--kelly-light-orange); */
   color: var(--secondary);
   margin-bottom: 0.2em;
 }
 
 h4 {
-  /* color: var(--kelly-light-orange); */
   color: var(--secondary);
   margin-bottom: 0.2em;
 }
 
 a {
-  color: var(--accent);
+  color: var(--link);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--secondary);
+  text-decoration: underline;
 }
 
 ::selection {
@@ -95,7 +84,7 @@ a:hover {
 /* Scroll bars */
 /* Default scrollbar styles for light mode */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 10pt;
 }
 
 ::-webkit-scrollbar-track {
