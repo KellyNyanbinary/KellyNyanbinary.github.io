@@ -1,6 +1,26 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: hsl(283, 50%, 7%);
+    --background: hsl(0, 0%, 100%);
+    --primary: hsl(30, 100%, 50%);
+    --secondary: hsl(30, 60%, 40%);
+    --accent: hsl(200, 100%, 80%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: hsl(283, 50%, 93%);
+    --background: hsl(0, 0%, 0%);
+    --primary: hsl(30, 100%, 50%);
+    --secondary: hsl(30, 60%, 60%);
+    --accent: hsl(200, 100%, 20%);
+  }
+}
+
 :root {
-  color-scheme: dark;
-  background-color: black;
+  /* color-scheme: dark; */
+  /* background-color: black; */
   --kelly-orange: #ff8000;
   --kelly-light-orange: #de9143;
   --kelly-lighter-orange: #FFE2C2;
@@ -11,12 +31,13 @@
 body {
   margin: 0px 5% 100px 5%;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  /* color: white; */
 }
 
 .maintitle {
   display: flex;
-  color: var(--kelly-orange);
+  /* color: var(--kelly-orange); */
+  color: var(--primary);
   height: 100dvh;
   justify-content: center;
   align-items: center;
@@ -25,7 +46,8 @@ body {
 
 .secondarypagetitle {
   display: flex;
-  color: var(--kelly-orange);
+  /* color: var(--kelly-orange); */
+  color: var(--primary);
   height: 20dvh;
   justify-content: center;
   align-items: center;
@@ -37,46 +59,34 @@ h1 {
 }
 
 h2 {
-  color: var(--kelly-orange);
+  /* color: var(--kelly-orange); */
+  color: var(--primary);
 }
 
 h3 {
-  color: var(--kelly-light-orange);
+  /* color: var(--kelly-light-orange); */
+  color: var(--secondary);
   margin-bottom: 0.2em;
 }
 
 h4 {
-  color: var(--kelly-light-orange);
+  /* color: var(--kelly-light-orange); */
+  color: var(--secondary);
   margin-bottom: 0.2em;
 }
 
 a {
-  display: inline-block; /* Allows padding to be applied */
-  padding: 0.1em 0.2em; /* Space around the link text */
-  border: 2px solid var(--kelly-dark-orange); /* Border around the link */
-  border-radius: 0.4em; /* Rounded corners */
-  background-color: var(--kelly-dark-orange); /* Background color */
-  text-decoration: none; /* Removes the default underline */
-  color: var(--kelly-lighter-orange); /* Text color */
-  margin: 2px; /* Space between links */
-  transition: 0.3s; /* Smooth transition for hover effect */
+  color: var(--accent);
+  text-decoration: none;
 }
 
-a:hover, a:focus {
-  font-size: 110%;
-  border-color: var(--kelly-orange); /* Border color on hover */
-  background-color: var(--kelly-orange); /* Background color on hover */
-  color: white; /* Text color on hover */
+a:hover {
+  color: var(--secondary);
 }
 
-a:active {
-  font-size: 90%;
-  border-color: var(--kelly-darker-orange); /* Border color on hover */
-  background-color: var(--kelly-darker-orange); /* Background color on hover */
-  color: var(--kelly-light-orange); /* Text color on hover */
+::selection {
+  background: var(--accent); /* WebKit/Blink Browsers */
 }
-
-a:focus {
-  outline: solid var(--kelly-orange);
-  outline-offset: -0.02em;
+::-moz-selection {
+  background: var(--accent); /* Gecko Browsers */
 }
