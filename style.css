@@ -1,21 +1,21 @@
 @media (prefers-color-scheme: light) {
   :root {
-    --text: hsl(31, 61%, 10%);
-    --background: hsl(0, 0%, 100%);
-    --primary: hsl(30, 100%, 50%);
-    --secondary: hsl(30, 60%, 40%);
-    --accent: hsl(200, 100%, 80%);
-    --link: hsl(200, 100%, 20%);
+    --text: oklch(23.29% 0.036 66.22);
+    --background: oklch(100.00% 0.000 89.88);
+    --primary: oklch(73.19% 0.186 52.98);
+    --secondary: oklch(86.36% 0.054 67.00);
+    --accent: oklch(86.41% 0.083 230.61);
+    --link: oklch(36.80% 0.083 230.61);
   }
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: hsl(31, 61%, 90%);
-    --background: hsl(0, 0%, 0%);
-    --primary: hsl(30, 100%, 50%);
-    --secondary: hsl(30, 60%, 60%);
-    --accent: hsl(200, 100%, 20%);
-    --link: hsl(200, 100%, 80%);
+    --text: oklch(93.26% 0.027 66.22);
+    --background: oklch(0.00% 0.000 0.00);
+    --primary: oklch(73.19% 0.186 52.98);
+    --secondary: oklch(35.19% 0.063 67.00);
+    --accent: oklch(36.80% 0.083 230.61);
+    --link: oklch(86.41% 0.083 230.61);
   }
 }
 
