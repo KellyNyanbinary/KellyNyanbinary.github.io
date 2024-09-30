@@ -25,8 +25,10 @@
 
 body {
   margin: 0px 5% 100px 5%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   color: var(--text);
+  max-width: 80ch;
+  margin: 0 auto; /* center text */
 }
 
 .maintitle {
@@ -52,17 +54,16 @@ h1 {
 }
 
 h2 {
-  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 4px;
 }
 
 h3 {
-  color: var(--secondary);
-  margin-bottom: 0.2em;
+  margin-bottom: 0.5em;
 }
 
 h4 {
-  color: var(--secondary);
-  margin-bottom: 0.2em;
+  /* margin-bottom: 0.2em; */
 }
 
 a {
