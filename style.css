@@ -8,6 +8,7 @@
     --link: oklch(36.80% 0.083 230.61);
   }
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text: oklch(93.26% 0.027 66.22);
@@ -19,25 +20,43 @@
   }
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --margin-primary: 2em;
+}
+
 :root {
   background-color: var(--background);
+  font-family: Poppins, Arial, sans-serif;
 }
 
 body {
-  margin: 0px 5% 100px 5%;
-  font-family: 'Poppins', Arial, sans-serif;
-  color: var(--text);
   max-width: 80ch;
-  margin: 0 auto; /* center text */
+  color: var(--text);
+  /* center text block */
+  margin: var(--margin-primary);
 }
 
-.maintitle {
+#maintitle {
   display: flex;
-  color: var(--primary);
-  height: 100dvh;
+  height: calc(100dvh - 1 * var(--margin-primary));
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+#maintitle h1 {
+  font-size: 5vmax;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+#maintitle h2 {
+  font-size: 3vmax;
+  margin-top: 1%;
+  font-weight: 300;
+  border: none;
 }
 
 .secondarypagetitle {
@@ -51,11 +70,11 @@ body {
 
 h1 {
   font-size: max(3vmax, 24pt);
+  border-bottom: 2px solid var(--primary);
 }
 
 h2 {
   border-bottom: 2px solid var(--primary);
-  padding-bottom: 4px;
 }
 
 h3 {
@@ -63,7 +82,7 @@ h3 {
 }
 
 h4 {
-  /* margin-bottom: 0.2em; */
+  margin-bottom: 0.5em;
 }
 
 a {
@@ -75,11 +94,14 @@ a:hover {
   text-decoration: underline;
 }
 
+/* WebKit/Blink Browsers */
 ::selection {
-  background: var(--accent); /* WebKit/Blink Browsers */
+  background: var(--accent);
 }
+
+/* Gecko Browsers */
 ::-moz-selection {
-  background: var(--accent); /* Gecko Browsers */
+  background: var(--accent);
 }
 
 /* Scroll bars */
