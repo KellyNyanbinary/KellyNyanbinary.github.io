@@ -102,6 +102,8 @@ main {
   display: flex;
   min-height: 20dvh;
 
+  margin: 0 1em;
+
   /* Center items horizontally */
   justify-content: center;
   /* Center items vertifally */
@@ -111,6 +113,7 @@ main {
 
 .secondarypagetitle h1 {
   font-size: clamp(16px, 8vw, 64px);
+  margin-bottom: 0.5em;
 }
 
 /* Headings */
@@ -144,10 +147,14 @@ p {
 
 /* Navbar */
 
+.current {
+  font-weight: bold;
+}
+
 /* Footers */
 
 footer {
-  padding: 20px;
+  padding: 0 1em;
   text-align: center;
 }
 
