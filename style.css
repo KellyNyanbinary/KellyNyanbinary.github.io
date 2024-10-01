@@ -6,25 +6,25 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --text-heading: oklch(23.29% 0.036 66.22);
-    --text: oklch(34.00% 0.036 66.22);
+    --text-heading: oklch(20.00% 0.036 66.22);
+    --text: oklch(25.00% 0.027 66.22);
     --background: oklch(100.00% 0.000 89.88);
     --primary: oklch(73.19% 0.186 52.98);
-    --secondary: oklch(86.36% 0.054 67.00);
+    --secondary: oklch(86.36% 0.063 67.00);
     --accent: oklch(86.41% 0.083 230.61);
-    --link: oklch(50.00% 0.083 230.61);
+    --link: oklch(55.00% 0.083 230.61);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-heading: oklch(93.26% 0.027 66.22);
-    --text: oklch(83.00% 0.027 66.22);
+    --text-heading: oklch(95.00% 0.036 66.22);
+    --text: oklch(90.00% 0.027 66.22);
     --background: oklch(0.00% 0.000 0.00);
     --primary: oklch(73.19% 0.186 52.98);
     --secondary: oklch(35.19% 0.063 67.00);
     --accent: oklch(36.80% 0.083 230.61);
-    --link: oklch(86.41% 0.083 230.61);
+    --link: oklch(58% 0.083 230.61);
   }
 }
 
