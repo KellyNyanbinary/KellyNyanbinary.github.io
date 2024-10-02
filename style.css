@@ -101,6 +101,8 @@ main {
 .secondarypagetitle {
   display: flex;
   min-height: 20dvh;
+  height: 20dvh;
+  max-height: 20dvh;
 
   margin: 0 1em;
 
