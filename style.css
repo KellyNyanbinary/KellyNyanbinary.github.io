@@ -72,13 +72,10 @@ main {
 
 /* Titles */
 
-.title {
-  margin: var(--margin-primary);
-}
-
 .maintitle {
   display: flex;
   min-height: calc(100dvh - 1 * var(--margin-primary));
+  margin: var(--margin-primary);
 
   justify-content: center;
   align-items: center;
@@ -100,9 +97,9 @@ main {
 
 .secondarypagetitle {
   display: flex;
-  min-height: 20dvh;
+  min-height: 10dvh;
 
-  margin: 0 1em;
+  margin: var(--margin-primary);
 
   /* Center items horizontally */
   justify-content: center;
