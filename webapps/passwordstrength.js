@@ -22,7 +22,7 @@ function calculateStrength() {
             ) - 2
 
             if (yearsToGuess < 0) {
-                strengthMessage.innerHTML = "Password is too short and can be guessed under a year."
+                strengthMessage.innerHTML = "Password is too short and can be guessed in under a year."
             } else {
                 const yearText = yearsToGuess.toFixed(0) == "1" ? "year" : "years"
                 strengthMessage.innerHTML =
