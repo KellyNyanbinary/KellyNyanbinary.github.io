@@ -9,11 +9,17 @@
     --text-heading: oklch(20.00% 0.036 66.22);
     --text: oklch(25.00% 0.027 66.22);
     --background: oklch(100.00% 0.000 89.88);
-    --secondary-background: oklch(95.00% 0.000 0.00);
+    --border: oklch(80.00% 0.000 0.00);
+    --shadow: oklch(00.00% 0.000 0.00);
     --primary: oklch(73.19% 0.186 52.98);
     --secondary: oklch(86.36% 0.063 67.00);
     --accent: oklch(86.41% 0.083 230.61);
     --link: oklch(55.00% 0.083 230.61);
+
+    --shadow-radius-shallow: 2px;
+    --shadow-radius-medium: 4px;
+    --shadow-radius-heavy: 6px;
+    --shadow-radius-deep: 8px;
   }
 }
 
@@ -22,17 +28,26 @@
     --text-heading: oklch(95.00% 0.036 66.22);
     --text: oklch(90.00% 0.027 66.22);
     --background: oklch(0.00% 0.000 0.00);
-    --secondary-background: oklch(24.35% 0.000 0.00);
+    --border: oklch(30% 0.000 0.00);
+    --shadow: oklch(80% 0.000 0.00);
     --primary: oklch(73.19% 0.186 52.98);
     --secondary: oklch(35.19% 0.063 67.00);
     --accent: oklch(36.80% 0.083 230.61);
     --link: oklch(58% 0.083 230.61);
+
+    --shadow-radius-shallow: 4px;
+    --shadow-radius-medium: 6px;
+    --shadow-radius-heavy: 8px;
+    --shadow-radius-deep: 10px;
   }
 }
 
 /* Other variables */
 :root {
   --margin-primary: 2rem;
+  --border-radius-small: 2px;
+  --border-radius-medium: 4px;
+  --border-radius-large: 8px;
 }
 
 /* Global properties */
@@ -170,25 +185,28 @@ a.current:hover {
 input {
   margin: 8px;
   padding: 4px;
-  background-color: var(--secondary-background);
+  background-color: var(--background);
 
-  border-radius: 4px;
-  border: 1px solid transparent;
+  border-radius: var(--border-radius-small);
+  border: 1px solid var(--border);
   outline: none;
-  box-shadow: 0 0 4px color-mix(in oklch, var(--text) 20%, transparent);
+  box-shadow:
+    0 calc(var(--shadow-radius-shallow) / 4) var(--shadow-radius-shallow) color-mix(in oklch, var(--shadow) 20%, transparent);
 
   color: var(--text);
 
-  transition: box-shadow 0.1s ease-in-out, border 0.1s
+  transition: box-shadow 0.1s ease-in-out, outline 0.1s
 }
 
 input:hover {
-  box-shadow: 0 0 6px color-mix(in oklch, var(--text) 40%, transparent);
+  box-shadow:
+    0 calc(var(--shadow-radius-medium) / 4) var(--shadow-radius-medium) color-mix(in oklch, var(--shadow) 40%, transparent);
 }
 
 input:focus {
-  border: 1px solid var(--primary);
-  box-shadow: 0 0 8px color-mix(in oklch, var(--text) 60%, transparent);
+  outline: 2px solid var(--primary);
+  box-shadow:
+    0 calc(var(--shadow-radius-heavy) / 4) var(--shadow-radius-heavy) calc(var(--shadow-radius-heavy) / 4) color-mix(in oklch, var(--shadow) 60%, transparent);
 }
 
 /* Selections */
