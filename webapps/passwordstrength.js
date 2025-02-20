@@ -10,24 +10,39 @@ function calculateStrength() {
 
         // Validate password characters.
         if (password.length == 0) {
-            strengthMessage.innerHTML = "Enter a password to see time to guess."
+            strengthMessage.innerHTML = "Enter a password to see expected time to guess."
         } else if (!isValidPasswordChars(password)) {
             strengthMessage.innerHTML = "Password must contain only ASCII letters and punctuation.";
         } else {
-            const possibilities = 95 ** password.length
+            let rangeSize = 0
+            if (/[a-z]/g.test(password))
+                rangeSize += 26
+            if (/[A-Z]/g.test(password))
+                rangeSize += 26
+            if (/[0-9]/g.test(password))
+                rangeSize += 10
+            if (/[\x20-\x2F]|[\x3A-\x40]|[\x5B-\x60]|[\x7B-\x7E]/g.test(password))
+                rangeSize += 33
+
+            const possibilities = rangeSize ** password.length
+            const entropy = password.length * Math.log2(rangeSize)
+
+            const possibilitiesText = "There are " + possibilities.toExponential(3) + " possibilities."
+            const rangeSizeText = "The range size is " + rangeSize + " characters."
 
             // This is Wolfram Alpha's result.
             const yearsToGuess = 2 * 1.4427 * Math.log(
-                (0.693146 * possibilities) / baseRatePerYear
+                (0.693146 * possibilities / 2) / baseRatePerYear
             ) - 2
 
+            const yearText = yearsToGuess.toFixed(0) == "1" ? "year" : "years"
+            const yearsToGuessText = "It is expected to take " + yearsToGuess.toFixed(0) + " " + yearText + " to guess this password."
+
             if (yearsToGuess < 0) {
-                strengthMessage.innerHTML = "Password is too short and can be guessed in under a year."
+                strengthMessage.innerHTML = rangeSizeText + "<br>" + possibilitiesText + "<br>" + "Password is too short and can be guessed in under a year."
             } else {
-                const yearText = yearsToGuess.toFixed(0) == "1" ? "year" : "years"
-                strengthMessage.innerHTML =
-                    "There are " + possibilities.toExponential(3) + " possibilities.<br>" +
-                    "It will take " + yearsToGuess.toFixed(0) + " " + yearText + " to guess this password."
+
+                strengthMessage.innerHTML = rangeSizeText + "<br>" + possibilitiesText + "<br>" + yearsToGuessText
             }
         }
     });
