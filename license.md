@@ -1,6 +1,6 @@
 BSD 3-Clause License
 
-Copyright (c) 2022, Kelly Wu
+Copyright (c) 2025, Kelly Wu
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
