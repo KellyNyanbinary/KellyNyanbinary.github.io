@@ -94,9 +94,9 @@ main {
 .secondarypagetitle {
   display: flex;
   flex-direction: column;
-  height: auto;
 
-  margin: var(--margin-primary);
+  margin: var(--margin-primary) auto;
+  max-width: calc(100% - 2 * var(--margin-primary));
 
   /* Center items horizontally */
   justify-content: center;
@@ -106,9 +106,12 @@ main {
 }
 
 .secondarypagetitle h1 {
-  font-size: clamp(0.5rem, 6vw, 4rem);
-  white-space: nowrap;
+  width: 100%;
   margin-bottom: 0.5rem;
+
+  font-size: clamp(0.5rem, 6vw, 4rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Headings */
