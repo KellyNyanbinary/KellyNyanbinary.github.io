@@ -9,6 +9,7 @@
     --text-heading: oklch(20.00% 0.036 66.22);
     --text: oklch(25.00% 0.027 66.22);
     --background: oklch(100.00% 0.000 89.88);
+    --secondary-background: oklch(95.00% 0.000 0.00);
     --primary: oklch(73.19% 0.186 52.98);
     --secondary: oklch(86.36% 0.063 67.00);
     --accent: oklch(86.41% 0.083 230.61);
@@ -21,6 +22,7 @@
     --text-heading: oklch(95.00% 0.036 66.22);
     --text: oklch(90.00% 0.027 66.22);
     --background: oklch(0.00% 0.000 0.00);
+    --secondary-background: oklch(24.35% 0.000 0.00);
     --primary: oklch(73.19% 0.186 52.98);
     --secondary: oklch(35.19% 0.063 67.00);
     --accent: oklch(36.80% 0.083 230.61);
@@ -169,15 +171,45 @@ hr {
 
 a {
   color: var(--link);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+
+  transition: text-decoration-color 0.1s ease-in-out
 }
 
-.current {
+a.current {
   color: var(--text);
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration-color: var(--link);
+}
+
+a.current:hover {
+  text-decoration-color: var(--text);
+}
+
+/* Input boxes */
+input {
+  margin: 8px;
+  padding: 4px;
+  background-color: var(--secondary-background);
+
+  border-radius: 4px;
+  border: 1px solid transparent;
+  outline: none;
+  box-shadow: 0 0 4px color-mix(in oklch, var(--text) 20%, transparent);
+
+  transition: box-shadow 0.1s ease-in-out, border 0.1s
+}
+
+input:hover {
+  box-shadow: 0 0 6px color-mix(in oklch, var(--text) 40%, transparent);
+}
+
+input:focus {
+  border: 1px solid var(--primary);
+  box-shadow: 0 0 8px color-mix(in oklch, var(--text) 60%, transparent);
 }
 
 /* Selections */
