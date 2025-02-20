@@ -10,7 +10,7 @@ function calculateStrength() {
 
         // Validate password characters.
         if (password.length == 0) {
-            strengthMessage.innerHTML = "Enter a password first to see strength."
+            strengthMessage.innerHTML = "Enter a password to see time to guess."
         } else if (!isValidPasswordChars(password)) {
             strengthMessage.innerHTML = "Password must contain only ASCII letters and punctuation.";
         } else {
@@ -22,7 +22,7 @@ function calculateStrength() {
             ) - 2
 
             if (yearsToGuess < 0) {
-                strengthMessage.innerHTML = "Password is too short and can be cracked under a year."
+                strengthMessage.innerHTML = "Password is too short and can be guessed under a year."
             } else {
                 const yearText = yearsToGuess.toFixed(0) == "1" ? "year" : "years"
                 strengthMessage.innerHTML =
