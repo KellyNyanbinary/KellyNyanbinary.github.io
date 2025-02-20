@@ -8,7 +8,8 @@
   :root {
     --text-heading: oklch(20.00% 0.036 66.22);
     --text: oklch(25.00% 0.027 66.22);
-    --background: oklch(100.00% 0.000 89.88);
+    --background: oklch(100.00% 0.000 0);
+    --background-secondary: oklch(97.00% 0.000 0);
     --border: oklch(80.00% 0.000 0.00);
     --shadow: oklch(00.00% 0.000 0.00);
     --primary: oklch(73.19% 0.186 52.98);
@@ -28,6 +29,7 @@
     --text-heading: oklch(95.00% 0.036 66.22);
     --text: oklch(90.00% 0.027 66.22);
     --background: oklch(0.00% 0.000 0.00);
+    --background-secondary: oklch(20.00% 0.000 0.00);
     --border: oklch(30% 0.000 0.00);
     --shadow: oklch(80% 0.000 0.00);
     --primary: oklch(73.19% 0.186 52.98);
@@ -206,7 +208,18 @@ input:hover {
 input:focus {
   outline: 2px solid var(--primary);
   box-shadow:
-    0 calc(var(--shadow-radius-heavy) / 4) var(--shadow-radius-heavy) calc(var(--shadow-radius-heavy) / 4) color-mix(in oklch, var(--shadow) 60%, transparent);
+    0 calc(var(--shadow-radius-heavy) / 4) var(--shadow-radius-heavy) color-mix(in oklch, var(--shadow) 60%, transparent);
+}
+
+/* Code blocks */
+
+.code-block {
+  padding: 16px;
+  background-color: var(--background-secondary);
+
+  border-radius: var(--border-radius-large);
+
+  font-family: "JetBrains Mono", monospace;
 }
 
 /* Selections */
