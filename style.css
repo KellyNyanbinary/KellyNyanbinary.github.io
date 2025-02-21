@@ -47,9 +47,9 @@
 /* Other variables */
 :root {
   --margin-primary: 2rem;
-  --border-radius-small: 2px;
-  --border-radius-medium: 4px;
-  --border-radius-large: 8px;
+  --border-radius-small: 4px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 16px;
 }
 
 /* Global properties */
@@ -166,11 +166,15 @@ hr {
 /* Links */
 
 a {
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-small);
+  outline: none;
+
   color: var(--link);
   text-decoration: underline;
   text-decoration-color: transparent;
 
-  transition: text-decoration-color 0.2s ease-in-out
+  transition: text-decoration-color 0.2s ease-in-out, border 0.1s ease-in-out
 }
 
 a.current {
@@ -178,8 +182,12 @@ a.current {
 }
 
 a:hover,
-a:focus {
+a:focus-visible {
   text-decoration-color: var(--link);
+}
+
+a:focus-visible {
+  border: 2px solid var(--primary);
 }
 
 a.current:hover {
@@ -201,7 +209,7 @@ input {
 
   color: var(--text);
 
-  transition: box-shadow 0.1s ease-in-out, outline 0.1s
+  transition: box-shadow 0.1s ease-in-out, border-color 0.1s ease-in-out
 }
 
 input:hover {
@@ -210,7 +218,9 @@ input:hover {
 }
 
 input:focus {
-  outline: 2px solid var(--primary);
+  padding: 3px;
+
+  border: 2px solid var(--primary);
   box-shadow:
     0 calc(var(--shadow-radius-heavy) / 4) var(--shadow-radius-heavy) color-mix(in oklch, var(--shadow) 60%, transparent);
 }
