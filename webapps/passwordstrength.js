@@ -41,14 +41,12 @@ function calculateStrength() {
         // Validate password characters.
         if (password.length == 0) {
             strengthMessage.innerHTML = "Enter a password to see expected time to guess."
-            characterMessage.innerHTML = characterText
             return
         }
 
         // Validate password characters.
         if (!isValidPasswordChars(password)) {
             strengthMessage.innerHTML = "Password must contain only ASCII letters and punctuation.";
-            characterMessage.innerHTML = characterText
             return
         }
 
