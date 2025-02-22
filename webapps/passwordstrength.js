@@ -8,6 +8,7 @@ function calculateStrength() {
     passwordInput.addEventListener("input", function() {
         const password = passwordInput.value;
         const baseRatePerYear = 500000 * 3600 * 24 * 365.25  // guesses per second, taken from https://openbenchmarking.org/test/pts/john-the-ripper for a single high end server in 2025
+        const yearsToDouble = 2 // Moore's Law
 
         let rangeSize = 0
         let characterText = ""
@@ -57,9 +58,9 @@ function calculateStrength() {
         const rangeSizeText = "The range size is " + rangeSize + " characters."
 
         // This is Wolfram Alpha's result.
-        const yearsToGuess = 2.8854 * Math.log(
-            (0.3465735 * possibilities) / baseRatePerYear + 2
-        ) - 2
+        const yearsToGuess = yearsToDouble * 1.4427 * Math.log(
+            (0.3465735 * possibilities) / (baseRatePerYear * yearsToDouble) + 1
+        )
 
         const yearText = yearsToGuess.toFixed(0) == "1" ? "year" : "years"
         const yearsToGuessText = "It is expected to take " + yearsToGuess.toFixed(0) + " " + yearText + " to guess this password."
