@@ -89,6 +89,12 @@ main {
   hyphens: auto;
 }
 
+/* Set global outline style. */
+*:focus,
+*:focus-visible {
+  outline: 2px solid var(--primary);
+}
+
 /* Titles */
 
 .secondarypagetitle {
@@ -168,7 +174,6 @@ hr {
 a {
   border: 2px solid transparent;
   border-radius: var(--border-radius-small);
-  outline: none;
 
   color: var(--link);
   text-decoration: underline;
@@ -184,10 +189,6 @@ a.current {
 a:hover,
 a:focus-visible {
   text-decoration-color: var(--link);
-}
-
-a:focus-visible {
-  border: 2px solid var(--primary);
 }
 
 a.current:hover {
