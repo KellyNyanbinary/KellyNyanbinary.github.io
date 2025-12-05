@@ -1,0 +1,64 @@
+/* Gmail-style email excerpts */
+.email-excerpt {
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+.email-toolbar {
+  background: #f1f1f1;
+  border-bottom: 1px solid #d5d5d5;
+  padding: 6px 10px;
+}
+
+.email-toolbar span {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #c3c3c3;
+  padding: 2px 8px;
+  margin-right: 6px;
+}
+
+.email-thread {
+  padding: 12px 16px 20px;
+}
+
+.email-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+}
+
+.email-from {
+  font-weight: bold;
+}
+
+.email-meta {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.email-subject {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.email-body p {
+  margin: 0 0 10px;
+}
+
+.email-branding {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.email-branding img {
+  width: 32px;
+  height: auto;
+}

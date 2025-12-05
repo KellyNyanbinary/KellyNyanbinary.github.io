@@ -1,0 +1,58 @@
+/* 2012 Twitter-style posts */
+.tweet-panel {
+  border: 1px solid #b7d3ee;
+  background: #d9ecff;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.tweet-panel h3 {
+  margin: 0 0 8px;
+}
+
+.tweet-column {
+  background: #f7fbff;
+  border: 1px solid #c6dced;
+  padding: 8px 16px;
+}
+
+.tweet-card {
+  border-bottom: 1px solid #e1e8ed;
+  padding: 12px 0;
+  overflow: auto;
+}
+
+.tweet-card:last-child {
+  border-bottom: none;
+}
+
+.tweet-avatar {
+  float: left;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  border: 1px solid #c0d6ec;
+}
+
+.tweet-author {
+  font-weight: bold;
+  color: #0c4f8a;
+}
+
+.tweet-handle {
+  font-size: 0.85rem;
+  color: #657786;
+}
+
+.tweet-body {
+  clear: both;
+  font-size: 0.95rem;
+  margin: 6px 0 8px;
+}
+
+.tweet-actions span {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #8899a6;
+  margin-right: 12px;
+}
