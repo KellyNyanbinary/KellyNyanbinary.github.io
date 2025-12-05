@@ -75,7 +75,7 @@ adobe-announces-new-photoshop-and-more:
 
 adobes-creative-suite-is-dead:
     type: article
-    title: Adobe’s Creative Suite is dead, long live the Creative Cloud
+    title: Adobe's Creative Suite is dead, long live the Creative Cloud
     author: Cunningham, Andrew
     date: 2013-05-06
     parent:
@@ -107,7 +107,7 @@ eliminate-cc-petition:
         value: https://www.change.org/petitions/adobe-systems-incorporated-eliminate-the-mandatory-creative-cloud-subscription-model
         date: 2025-11-16
 
-# An author’s note or dialogue can cite this guild article to highlight how over 90% of creative professionals use Photoshop, leaving artists feeling “Adobe is the only game in town” and “at the company’s mercy” on pricing. It lists open-source alternatives (GIMP, Scribus, Inkscape, etc.), which a character might research when contemplating escaping Adobe’s grip.
+# An author's note or dialogue can cite this guild article to highlight how over 90% of creative professionals use Photoshop, leaving artists feeling "Adobe is the only game in town" and "at the company's mercy" on pricing. It lists open-source alternatives (GIMP, Scribus, Inkscape, etc.), which a character might research when contemplating escaping Adobe's grip.
 free-adobe-software-alternative:
     type: article
     title: Free Adobe Software Alternatives
@@ -120,7 +120,7 @@ free-adobe-software-alternative:
         value: https://graphicartistsguild.org/free-adobe-software-alternatives
         date: 2025-12-02
 
-# This interview with Krita’s lead can be quoted in dialogue or a news montage to show an open-source victory. For example, a character shares an article noting Krita offers “at least 80% of [Photoshop’s] capabilities” on all platforms, for free and open-source. It reinforces a plot point about artists flocking to alternatives like Krita in response to Adobe’s subscriptions.
+# This interview with Krita's lead can be quoted in dialogue or a news montage to show an open-source victory. For example, a character shares an article noting Krita offers "at least 80% of [Photoshop's] capabilities" on all platforms, for free and open-source. It reinforces a plot point about artists flocking to alternatives like Krita in response to Adobe's subscriptions.
 project-lead-on-the-success-of-krita:
     type: article
     title: "'The feedback from millions of users is that it really works' Krita's project lead on the success of the free Photoshop alternative"
@@ -134,7 +134,7 @@ project-lead-on-the-success-of-krita:
         value: https://www.creativebloq.com/art/digital-art/the-feedback-were-getting-from-millions-of-users-is-that-it-really-works-kritas-project-lead-on-the-success-of-the-free-photoshop-alternative
         date: 2025-12-02
 
-# As an academic source, this study’s findings can appear in an author’s footnote or a tech-savvy character’s explanation. It provides economic context, showing that contrary to conventional wisdom, a perpetual license can sometimes be more profitable for software vendors than subscriptions. In the narrative, an economist character might cite this to argue why Adobe’s move was bold despite theory, or to predict how a competitor could exploit weaknesses in Adobe’s SaaS strategy.
+# As an academic source, this study's findings can appear in an author's footnote or a tech-savvy character's explanation. It provides economic context, showing that contrary to conventional wisdom, a perpetual license can sometimes be more profitable for software vendors than subscriptions. In the narrative, an economist character might cite this to argue why Adobe's move was bold despite theory, or to predict how a competitor could exploit weaknesses in Adobe's SaaS strategy.
 perpetual-vs-saas:
     type: article
     title: The Impact of Customer Valuation Uncertainty on Software Licensing
@@ -151,7 +151,7 @@ perpetual-vs-saas:
         value: https://aisel.aisnet.org/misq/vol44/iss2/5
         date: 2025-12-02
 
-# This book offers a critical backdrop on digital labor. The author’s narration or an essay excerpt in the story can invoke Huws to discuss how 21st-century capitalism shows a “relentless impulse to commodify our lives,” restructuring work into precarious forms of labor monthlyreview.org. This could support a scene depicting a designer’s sense of exploitation under Adobe’s subscription (part of the “cybertariat”) and frame the story’s conflict in terms of labor and control in the digital economy.
+# This book offers a critical backdrop on digital labor. The author's narration or an essay excerpt in the story can invoke Huws to discuss how 21st-century capitalism shows a "relentless impulse to commodify our lives," restructuring work into precarious forms of labor monthlyreview.org. This could support a scene depicting a designer's sense of exploitation under Adobe's subscription (part of the "cybertariat") and frame the story's conflict in terms of labor and control in the digital economy.
 labour-in-the-global-digital-economy:
     type: book
     title: Labor in the Global Digital Economy
@@ -166,10 +166,10 @@ labour-in-the-global-digital-economy:
         value: https://monthlyreview.org/9781583674635
         date: 2025-12-02
 
-# A fictional tech journalist in 2013 could reference this Wharton analysis to lend realism. It notes experts believed Adobe’s cloud move would ultimately be beneficial and widely emulated, even as “a number of customers…recoil at the notion” of paying endless subscription fees instead of owning software. This source can be cited in an author’s note or dialogue to mark the historical turning point when Adobe’s decision was seen as bold but indicative of a broader SaaS trend.
+# A fictional tech journalist in 2013 could reference this Wharton analysis to lend realism. It notes experts believed Adobe's cloud move would ultimately be beneficial and widely emulated, even as "a number of customers…recoil at the notion" of paying endless subscription fees instead of owning software. This source can be cited in an author's note or dialogue to mark the historical turning point when Adobe's decision was seen as bold but indicative of a broader SaaS trend.
 adobe-shift-to-cloud:
     type: article
-    title: "Adobe’s Shift to the Cloud: Is This the Start of a Trend?"
+    title: "Adobe's Shift to the Cloud: Is This the Start of a Trend?"
     author: Staff
     date: 2013-05-08
     parent:
@@ -180,7 +180,7 @@ adobe-shift-to-cloud:
         value: https://knowledge.wharton.upenn.edu/article/adobes-shift-to-the-cloud-is-this-the-start-of-a-trend
         date: 2025-12-02
 
-# This contemporaneous report can be mined for authentic user reactions and corporate responses. Excerpts could appear as news snippets or characters reading aloud: e.g., the Change.org petition stating “over time the only entity benefiting…is Adobe,” and a one-time purchase was “better for the consumer,” plus users calling the forced subscription “‘renting’ of software at prices that could be jacked up at any time”. In contrast, Adobe executives’ rebuttals from this piece can be quoted by a fictional Adobe representative character, adding realism to the story’s debate.
+# This contemporaneous report can be mined for authentic user reactions and corporate responses. Excerpts could appear as news snippets or characters reading aloud: e.g., the Change.org petition stating "over time the only entity benefiting…is Adobe," and a one-time purchase was "better for the consumer," plus users calling the forced subscription "‘renting' of software at prices that could be jacked up at any time". In contrast, Adobe executives' rebuttals from this piece can be quoted by a fictional Adobe representative character, adding realism to the story's debate.
 adobe-cc-reactions-responses-reassurance:
     type: article
     title: "Adobe Creative Cloud: Reactions, response, and reassurance"
@@ -194,7 +194,7 @@ adobe-cc-reactions-responses-reassurance:
         value: https://www.macworld.com/article/670447/adobe-creative-cloud-reactions-responses-and-reassurance.html
         date: 2025-12-02
 
-# This book can be referenced in an author’s commentary or a lawyer character’s dialogue to underscore the theme of lost ownership. For instance, a narrator might explain that after Creative Cloud, artists no longer own their tools – echoing Perzanowski and Schultz’s observation that the digital marketplace has “shifted notions of ownership,” effectively turning users into renters of software. This source lends scholarly weight to a scene about DRM or EULAs restricting what creators can do with “their” software.
+# This book can be referenced in an author's commentary or a lawyer character's dialogue to underscore the theme of lost ownership. For instance, a narrator might explain that after Creative Cloud, artists no longer own their tools – echoing Perzanowski and Schultz's observation that the digital marketplace has "shifted notions of ownership," effectively turning users into renters of software. This source lends scholarly weight to a scene about DRM or EULAs restricting what creators can do with "their" software.
 the-end-of-ownership:
     type: book
     title: "The End of Ownership: Personal Property in the Digital Economy"
@@ -211,7 +211,7 @@ the-end-of-ownership:
         value: https://direct.mit.edu/books/book/4662/The-End-of-OwnershipPersonal-Property-in-the
         date: 2025-12-02
 
-# Although a law review, its insights can shape the narrative’s broader context. An author’s note or a professor character might cite Tang’s argument that the romantic idea of digital creativity has given way to a gig-like reality. The story can mention how today’s creative work is “neither done by amateurs, nor for free,” but is monetized on platforms, making creators more like precarious gig workers. This source supports a subplot about artists feeling trapped by corporate platforms (like Adobe’s ecosystem) versus pursuing community-driven open-source alternatives.
+# Although a law review, its insights can shape the narrative's broader context. An author's note or a professor character might cite Tang's argument that the romantic idea of digital creativity has given way to a gig-like reality. The story can mention how today's creative work is "neither done by amateurs, nor for free," but is monetized on platforms, making creators more like precarious gig workers. This source supports a subplot about artists feeling trapped by corporate platforms (like Adobe's ecosystem) versus pursuing community-driven open-source alternatives.
 creative-labor-platform-capitalism:
     type: article
     title: Creative Labor and Platform Capitalism
@@ -228,7 +228,7 @@ creative-labor-platform-capitalism:
         value: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5399407
         date: 2025-12-02
 
-# This recent peer-reviewed study examines how the rise of subscription-based software (SaaS) is redefining the concept of ownership in the digital age. It specifically highlights the shift from perpetual licenses to subscriptions in industries like software, citing Adobe’s move to Creative Cloud as a prime example. The authors discuss how consumers, especially younger generations, now value access over ownership, favoring the flexibility of ongoing updates and cloud services instead of owning static products. In a fictional narrative about a company transitioning its creative tools from one-time purchases to a subscription model, you could draw on these insights to add realism and depth...
+# This recent peer-reviewed study examines how the rise of subscription-based software (SaaS) is redefining the concept of ownership in the digital age. It specifically highlights the shift from perpetual licenses to subscriptions in industries like software, citing Adobe's move to Creative Cloud as a prime example. The authors discuss how consumers, especially younger generations, now value access over ownership, favoring the flexibility of ongoing updates and cloud services instead of owning static products. In a fictional narrative about a company transitioning its creative tools from one-time purchases to a subscription model, you could draw on these insights to add realism and depth...
 subscription-economy:
     type: article
     title: "Subscription Economy and the Transformation of Ownership: A Review of Value Perceptions and Retention Strategies"

@@ -1,117 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Creative Cage — Title Page</title>
-		<link rel="stylesheet" href="creative-cage.css" />
-	</head>
-	<body class="classic-title">
-		<nav>
-			<div class="nav-shell">
-				<strong>Creative Cage</strong>
-				<div class="nav-links">
-					<a class="active" href="index.html">Title</a>
-					<a href="san-jose-2012.html">San&nbsp;Jose</a>
-					<a href="lunch-table.html">Lunch</a>
-					<a href="internal-forum-2013.html">Forum</a>
-					<a href="public-backlash.html">Backlash</a>
-					<a href="the-leak.html">Leak</a>
-					<a href="fallout.html">Fallout</a>
-					<a href="oakland.html">Oakland</a>
-					<a href="epilogue.html">Epilogue</a>
-					<a href="bibliography.html">Sources</a>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Creative Cage - Title Page</title>
+	<link rel="stylesheet" href="creative-cage.css" />
+</head>
+
+<body class="classic-title">
+	<nav>
+		<div class="nav-shell">
+			<strong>Creative Cage</strong>
+			<div class="nav-links">
+				<a class="active" href="index.html">Title</a>
+				<a href="san-jose-2012.html">San&nbsp;Jose</a>
+				<a href="lunch-table.html">Lunch</a>
+				<a href="internal-forum-2013.html">Forum</a>
+				<a href="public-backlash.html">Backlash</a>
+				<a href="the-leak.html">Leak</a>
+				<a href="fallout.html">Fallout</a>
+				<a href="oakland.html">Oakland</a>
+				<a href="epilogue.html">Epilogue</a>
+				<a href="bibliography.html">Sources</a>
+			</div>
+		</div>
+	</nav>
+	<main>
+		<header>
+			<p class="page-eyebrow">Historical Fiction spanning 2012-2014</p>
+			<h1 class="page-title">Creative Cage</h1>
+			<p class="subhead">
+				by Kelly Wu
+			</p>
+		</header>
+		<p>
+			A multimedia historical fiction about code, creativity, access, and the
+			moment Adobe tipped the world into the subscription era.
+		</p>
+		<div class="hero-slider" aria-live="polite">
+			<div class="hero-slide">
+				<div>
+					<p class="page-eyebrow">2012</p>
+					<h2>Pallets of shrink-wrapped Creative Suite boxes</h2>
 				</div>
 			</div>
-		</nav>
-		<main>
-			<header>
-				<p class="page-eyebrow">Historical Fiction 2012-2014</p>
-				<h1 class="page-title">Creative Cage</h1>
-				<p class="subhead">
-					by Kelly Nyanbinary<br/>
-          A multimedia historical fiction about code, creativity, access, and the
-					moment Adobe tipped the world into the subscription era.
-				</p>
-				<div class="hero-slider" aria-live="polite">
-					<div class="hero-slide">
-						<div>
-							<p class="page-eyebrow">2012</p>
-							<h2>Pallets of shrink-wrapped Creative Suite boxes</h2>
-						</div>
-					</div>
-					<div class="slider-controls">
-						<button class="slider-prev" aria-label="Previous slide">‹</button>
-						<button class="slider-next" aria-label="Next slide">›</button>
-					</div>
-				</div>
-			</header>
-		</main>
-		<script>
-			const slides = [
-				{
-					image:
-						'./assets/boxes.avif',
-					label: '2012',
-					caption: 'Pallets of boxed Creative Suite crowd the San Jose warehouse.'
-				},
-				{
-					image:
-						'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80',
-					label: 'Memo Hour',
-					caption: 'Internal emails outline the shift to Adobe ID verification.'
-				},
-				{
-					image:
-						'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1600&q=80',
-					label: 'Forum Heat',
-					caption: 'Employees argue about offline grace periods and ownership.'
-				},
-				{
-					image:
-						'https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1600&q=80',
-					label: 'Public Backlash',
-					caption: 'Creators rally online with petitions and protest art.'
-				},
-				{
-					image:
-						'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1600&q=80',
-					label: 'Aurora Paint',
-					caption: 'An Oakland loft rewrites the rules with perpetual tools.'
-				}
-			];
+			<div class="slider-controls">
+				<button class="slider-prev" aria-label="Previous slide">‹</button>
+				<button class="slider-next" aria-label="Next slide">›</button>
+				<button class="slider-toggle" aria-pressed="false">Pause</button>
+			</div>
+			<p class="slider-indicator" role="status" aria-live="polite"></p>
+		</div>
+	</main>
+	<script>
+		const slides = [
+			{
+				image:
+					'./assets/boxes.avif',
+				label: 'Creative Suite 6',
+				caption: 'Pallets of boxed Creative Suite crowd the San Jose warehouse.'
+			},
+			{
+				image:
+					'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80',
+				label: 'Internal Memo',
+				caption: 'Internal emails outline the shift to Adobe ID verification.'
+			},
+			{
+				image:
+					'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1600&q=80',
+				label: 'Forum Debate',
+				caption: 'Employees argue about offline grace periods and ownership.'
+			},
+			{
+				image:
+					'https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1600&q=80',
+				label: 'Public Backlash',
+				caption: 'Creators rally online with petitions and protest art.'
+			},
+			{
+				image:
+					'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1600&q=80',
+				label: 'Aurora Paint',
+				caption: 'An Oakland loft rewrites the rules with perpetual tools.'
+			}
+		];
 
-			const slideEl = document.querySelector('.hero-slide');
-			const prevBtn = document.querySelector('.slider-prev');
-			const nextBtn = document.querySelector('.slider-next');
-			let index = 0;
+		const slideEl = document.querySelector('.hero-slide');
+		const prevBtn = document.querySelector('.slider-prev');
+		const nextBtn = document.querySelector('.slider-next');
+		const toggleBtn = document.querySelector('.slider-toggle');
+		const indicatorEl = document.querySelector('.slider-indicator');
+		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+		let index = 0;
+		let intervalId = null;
+		let autoplayEnabled = !prefersReducedMotion.matches;
 
-			function renderSlide(pos) {
-				const slide = slides[pos];
-				slideEl.style.backgroundImage = `linear-gradient(180deg, rgba(5,5,5,0) 55%, rgba(5,5,5,0.75) 100%), url(${slide.image})`;
-				slideEl.innerHTML = `
+		function renderSlide(pos) {
+			const slide = slides[pos];
+			slideEl.style.backgroundImage = `linear-gradient(180deg, rgba(5,5,5,0) 55%, rgba(5,5,5,0.75) 100%), url(${slide.image})`;
+			slideEl.innerHTML = `
 					<div>
 						<h2>${slide.label}</h2>
 						<p>${slide.caption}</p>
 					</div>`;
+			indicatorEl.textContent = `Slide ${pos + 1} of ${slides.length} — ${slide.label}`;
+		}
+
+		function stopAutoplay() {
+			if (intervalId) {
+				clearInterval(intervalId);
+				intervalId = null;
 			}
+		}
 
-			prevBtn.addEventListener('click', () => {
-				index = (index - 1 + slides.length) % slides.length;
-				renderSlide(index);
-			});
-
-			nextBtn.addEventListener('click', () => {
-				index = (index + 1) % slides.length;
-				renderSlide(index);
-			});
-
-			setInterval(() => {
+		function startAutoplay() {
+			if (!autoplayEnabled || intervalId) return;
+			intervalId = setInterval(() => {
 				index = (index + 1) % slides.length;
 				renderSlide(index);
 			}, 6000);
+		}
 
+		function updateToggleState() {
+			const isPaused = !autoplayEnabled;
+			toggleBtn.textContent = isPaused ? 'Play' : 'Pause';
+			toggleBtn.setAttribute('aria-pressed', String(isPaused));
+		}
+
+		prevBtn.addEventListener('click', () => {
+			index = (index - 1 + slides.length) % slides.length;
 			renderSlide(index);
-		</script>
-	</body>
+		});
+
+		nextBtn.addEventListener('click', () => {
+			index = (index + 1) % slides.length;
+			renderSlide(index);
+		});
+
+		toggleBtn.addEventListener('click', () => {
+			autoplayEnabled = !autoplayEnabled;
+			if (autoplayEnabled) {
+				startAutoplay();
+			} else {
+				stopAutoplay();
+			}
+			updateToggleState();
+		});
+
+		prefersReducedMotion.addEventListener('change', (event) => {
+			autoplayEnabled = !event.matches;
+			if (autoplayEnabled) {
+				startAutoplay();
+			} else {
+				stopAutoplay();
+			}
+			updateToggleState();
+		});
+
+		renderSlide(index);
+		updateToggleState();
+		startAutoplay();
+	</script>
+</body>
+
 </html>

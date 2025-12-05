@@ -1,0 +1,143 @@
+:root {
+  --blue: #336699;
+  --grey: #808080;
+  --light-grey: #888888;
+}
+
+.reddit-thread {
+  background: #f6f7f8;
+  border: 1px solid #d5d8db;
+  padding: 8px 0 0;
+  margin: 16px 0;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.reddit-thread h3 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 16px 8px;
+}
+
+.reddit-thread-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d5d8db;
+  padding: 0 16px 6px;
+  margin-bottom: 4px;
+}
+
+.reddit-thread-header-show {
+  font-size: 0.85rem;
+  color: var(--blue);
+}
+
+.reddit-thread-header-subtitle {
+  font-size: 0.85rem;
+  color: var(--grey);
+  padding: 0 16px;
+}
+
+.sort {
+  font-weight: 700;
+}
+
+.sort-arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid;
+  display: inline-block;
+}
+
+.reddit-comments {
+  margin: 0;
+  padding: 0 16px;
+}
+
+.reddit-comment {
+  border-top: 1px solid #e4e7eb;
+  padding: 12px 0px;
+  position: relative;
+  margin: 0;
+}
+
+.reddit-comment:first-child {
+  border-top: none;
+}
+
+.reddit-comment::before {
+  content: none;
+}
+
+.reddit-comment .vote {
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.reddit-comment .comment-meta {
+  font-size: 0.82rem;
+  margin-left: 40px;
+  margin-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  color: var(--blue);
+}
+
+.reddit-comment .comment-meta .collapse {
+  font-weight: 300;
+}
+
+.reddit-comment .comment-data {
+  font-size: 0.85em;
+  color: #777;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.arrow.up {
+  border-bottom: 10px solid #9da4b2;
+}
+
+.arrow.down {
+  border-top: 10px solid #9da4b2;
+  margin-top: 4px;
+}
+
+.reddit-comment .comment-body {
+  margin: 4px 0 0 40px;
+  color: #1c1f24;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.reddit-comment.pinned {
+  background: #fdfded;
+  border-top: none;
+  margin-top: 4px;
+}
+
+.reddit-comment.pinned::before {
+  background: #f4d96c;
+}
+
+.comment-badge {
+  color: #5c4b00;
+  font-size: 0.8rem;
+  margin-left: 6px;
+}

@@ -38,3 +38,29 @@ sign-the-petition:
     url:
         value: https://x.com/dzenzel/status/333420890664620033
         date: 2025-12-02
+
+boxes:
+    type: misc
+    title: Brown Cardboard Box Lot
+    author: Wonderlane
+    date: 2019-10-03
+    parent:
+        type: web
+        title: Unsplash
+        author: Getty Images
+    url:
+        value: https://unsplash.com/photos/brown-cardboard-box-lot-OFfEOcIFiIc
+        date: 2025-12-04
+
+cafeteria:
+    type: misc
+    title: People Sitting on Chair in Restuarant
+    author: Simon Karemann
+    date: 2021-02-21
+    parent:
+        type: web
+        title: Unsplash
+        author: Getty Images
+    url:
+        value: https://unsplash.com/photos/people-sitting-on-chair-in-restaurant-p85-MG66GRY
+        date: 2025-12-04

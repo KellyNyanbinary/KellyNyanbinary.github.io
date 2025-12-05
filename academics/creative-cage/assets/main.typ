@@ -203,7 +203,7 @@ She swiped her card and entered the engineering building. Her monitor was covere
   Subject: Transition Plan - Creative Cloud Integration
   
   Team, \
-  Beginning Q2, we’ll start adapting the CS#footnote[Creative Suite] codebase for subscription-based activation. Product verification will occur through Adobe ID login, with periodic checks every 30-90 days.@adobe-identity-management-services@adobe-internet-connectivity We’re sunsetting the boxed distribution model.@adobes-creative-suite-is-dead
+  Beginning Q2, we'll start adapting the CS#footnote[Creative Suite] codebase for subscription-based activation. Product verification will occur through Adobe ID login, with periodic checks every 30-90 days.@adobe-identity-management-services@adobe-internet-connectivity We're sunsetting the boxed distribution model.@adobes-creative-suite-is-dead
 
   \-Evan
 ]
@@ -216,13 +216,13 @@ The cafeteria hummed with the usual chatter. A few engineers scrolled through Ha
 
 "Are we really doing this?" Mei asked.
 
-Rina poked at her salad. “They’ve wanted recurring revenue for years. Finance probably pushed hard this time.”
+Rina poked at her salad. "They've wanted recurring revenue for years. Finance probably pushed hard this time."
 
-“It’s not just revenue,” Mei said. “It’s access. You lose internet and suddenly the software forgets you paid for it. We're not buying software anymore, we're just renting functionality”@the-end-of-ownership
+"It's not just revenue," Mei said. "It's access. You lose internet and suddenly the software forgets you paid for it. We're not buying software anymore, we're just renting functionality"@the-end-of-ownership
 
-Rina shrugged. “They’ll say ninety days is long enough.”
+Rina shrugged. "They'll say ninety days is long enough."
 
-Mei didn’t answer. Ninety days sounded like a countdown.
+Mei didn't answer. Ninety days sounded like a countdown.
 
 = Internal Discussion Forum, 2013
 
@@ -231,7 +231,7 @@ Mei didn’t answer. Ninety days sounded like a countdown.
   
   MeiZhang: What happens when an artist in rural India loses internet access? Are they locked out of Photoshop?
   
-  EHarper: Offline grace period of \~90 days. Practically everyone’s online now.
+  EHarper: Offline grace period of \~90 days. Practically everyone's online now.
   
   MOrtega: So much for perpetual creativity.
   
@@ -244,8 +244,8 @@ Mei closed the notification. It felt symbolic.
 
 The announcement went live on a Monday. Within hours, the backlash came. Reddit. Tumblr. Twitter. Blog posts from frustrated illustrators.
 
-#quote(block: true, attribution: "Blog Post: DeviantArt user “miguel.draws”")[
-  “You can’t put a price on inspiration, but Adobe sure tries. My art software shouldn’t stop working because I forgot to log in.”
+#quote(block: true, attribution: "Blog Post: DeviantArt user "miguel.draws"")[
+  "You can't put a price on inspiration, but Adobe sure tries. My art software shouldn't stop working because I forgot to log in."
 ]
 
 #quote(block: true, attribution: "Tweet @gfx_alan")[
@@ -260,14 +260,14 @@ Mei scrolled through the replies and quote tweets. It wasn't just the volume, it
 
 A Change.org petition spread quickly. As Macworld reported, users worried they'd be trapped in rent-seeking software pricing with no alternative.@adobe-cc-reactions-responses-reassurance
 
-The petition was followed by a wave of memes: Photoshop icons behind jail bars, Illustrator with a ball and chain. Someone edited a fake ad: “Creativity, now available for monthly rent.”
+The petition was followed by a wave of memes: Photoshop icons behind jail bars, Illustrator with a ball and chain. Someone edited a fake ad: "Creativity, now available for monthly rent."
 
-Mei didn’t laugh. She felt implicated.
+Mei didn't laugh. She felt implicated.
 
 That night, she posted impulsively.
 
 #quote(block: true, attribution: "Tweet @MeiZhang (deleted 3 h later)")[
-  When your code becomes the padlock instead of the paintbrush… maybe it’s time to stop coding.
+  When your code becomes the padlock instead of the paintbrush… maybe it's time to stop coding.
 ]
 
 She deleted it, but not fast enough.
@@ -278,22 +278,22 @@ Evan rehearsed his rollout deck in a conference room. Charts flashed: projected 
 
 Mei watched silently.
 
-“Any questions?” Evan asked.
+"Any questions?" Evan asked.
 
-“Why hide the offline cutoff?” she said.
+"Why hide the offline cutoff?" she said.
 
-“It’s not hidden,” he said, still smiling. “It’s just not... front-facing. It confuses new users.”
+"It's not hidden," he said, still smiling. "It's just not... front-facing. It confuses new users."
 
 Mei thought about the artists who stayed offline for months while traveling. The students who only had internet access at libraries. The rural designers with inconsistent broadband.
 
-That night, she sat at her apartment desk. The glow of her secondhand monitor reflected off her glasses. She zipped a folder: `adobe_cloud_prototype.zip`. Inside were interface diagrams, mockups of the activation flow, and a line that bothered her: “If validation fails three cycles, disable essential functions.”#footnote[For concerned peer reviewers: this entire section regarding Creative Cloud and afterwards are entirely fictional and not representative of Adobe Inc. or Creative Cloud]
+That night, she sat at her apartment desk. The glow of her secondhand monitor reflected off her glasses. She zipped a folder: `adobe_cloud_prototype.zip`. Inside were interface diagrams, mockups of the activation flow, and a line that bothered her: "If validation fails three cycles, disable essential functions."#footnote[For concerned peer reviewers: this entire section regarding Creative Cloud and afterwards are entirely fictional and not representative of Adobe Inc. or Creative Cloud]
 
 She hesitated. Then she hit upload.
 
 By morning, Reddit was on fire.
 
 #quote(block: true, attribution: "Reddit Post Excerpts")[
-  u/PixelProphet: She leaked the real docs. They’re seriously planning to shut down the app offline.
+  u/PixelProphet: She leaked the real docs. They're seriously planning to shut down the app offline.
   
   u/FOSS4Life: Everyone go download Krita NOW.#footnote[https://krita.org]
   
@@ -304,13 +304,13 @@ By morning, Reddit was on fire.
 
 Security met her at the door.
 
-“Mei Zhang?”
+"Mei Zhang?"
 
-“Yes.”
+"Yes."
 
-“Come with us.”
+"Come with us."
 
-She handed over her badge. HR repeated phrases like “breach of confidentiality” and “corporate trust.” They didn’t sound angry. Just disappointed.
+She handed over her badge. HR repeated phrases like "breach of confidentiality" and "corporate trust." They didn't sound angry. Just disappointed.
 
 Walking out, Mei looked up at the Adobe logo. She had spent her whole career here. She felt older than she was.
 
@@ -318,23 +318,23 @@ Walking out, Mei looked up at the Adobe logo. She had spent her whole career her
   Misinformation online misrepresents our vision for innovation.@adobe-identity-management-services Adobe remains committed to delivering cutting-edge creative tools through the cloud. Recent misinformation spread online misrepresents our vision of accessibility and innovation...
 ]
 
-She didn’t read the rest.
+She didn't read the rest.
 
 = Oakland, Months Later
 
 The workspace smelled like burnt coffee and solder. Miguel typed quickly, his foot tapping.
 
-“We’re calling it _Aurora Paint_,” he said without looking up.
+"We're calling it _Aurora Paint_," he said without looking up.
 
-Mei sat beside him, opening her laptop. “Version control?”
+Mei sat beside him, opening her laptop. "Version control?"
 
-“GitLab. Self-hosted.”#footnote[https://about.gitlab.com/install/#install-self-managed-gitlab]
+"GitLab. Self-hosted."#footnote[https://about.gitlab.com/install/#install-self-managed-gitlab]
 
-“What’s the license?”
+"What's the license?"
 
-“GPLv3,” Miguel said. “Always free.”#footnote[https://www.gnu.org/licenses/gpl-3.0.en.html]
+"GPLv3," Miguel said. "Always free."#footnote[https://www.gnu.org/licenses/gpl-3.0.en.html]
 
-Mei nodded. The word felt soft. “Perpetual.”
+Mei nodded. The word felt soft. "Perpetual."
 
 They worked quietly. It was a simple life: bug reports, community feedback, occasional donations. Her code felt lighter now: no locks, no timers, no license validation scripts. Just tools.
 
@@ -345,11 +345,11 @@ On the homepage, she wrote:
 = Epilogue
 
 #quote(block: true, attribution: "Medium Post: Mei Zhang, 2014")[
-  I didn’t leave Adobe because I hated the cloud. I left because I love the sky.
+  I didn't leave Adobe because I hated the cloud. I left because I love the sky.
 
-  We used to build the tools that people created with. Then those tools began asking for permission. Subscriptions made sense on paper. They didn’t make sense for the soul.
+  We used to build the tools that people created with. Then those tools began asking for permission. Subscriptions made sense on paper. They didn't make sense for the soul.
 
-  History will call it a business shift. I’ll remember it as the moment creativity learned to wait for confirmation.
+  History will call it a business shift. I'll remember it as the moment creativity learned to wait for confirmation.
 ]
 
 #pagebreak()
