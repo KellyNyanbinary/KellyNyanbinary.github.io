@@ -1,0 +1,40 @@
+adobe-creative-suite-6-master-collection-for-windows-disk:
+    type: misc
+    title: Adobe Creative Suite 6 Master Collection for Windows Disk
+    publisher: Adobe Systems Incorporated
+    date: 2012-05-07
+    url:
+        value: https://archive.org/details/Adobe_Creative_Suite_6_Master_Collection_for_Windows_Application_CD_2_91055656_2
+        date: 2025-11-26
+
+# Old Adobe logo
+adobe-systems-logo-and-wordmark:
+    type: misc
+    title: Adobe Systems Logo and Wordmark
+    author: Adobe Systems Incorporated
+    date: 1993
+    url: 
+        value: https://commons.wikimedia.org/wiki/File:Adobe_Systems_logo_and_wordmark.svg
+        date: 2025-11-26
+
+adobe-photoshop-7-box:
+    type: misc
+    title: Adobe Photoshop 7.0
+    author: Adobe Systems Incorporated
+    date: 2002
+    url: 
+        value: https://i.ebayimg.com/images/g/lIwAAOSw5d5lR97h/s-l1600.webp
+        date: 2025-11-26
+
+# This real tweet can be embedded as a fictionalized social media post, capturing the grassroots backlash at the moment of transition. In the story, a character doomscrolling in 2013 might see @dzenzel’s plea and a flurry of retweets, symbolizing community anger. Including this microblog citation (with its Change.org link) as a screenshot or quote in the text grounds the narrative in authentic social media reaction, lending realism to the depiction of outraged users rallying against Adobe’s new subscription model.
+sign-the-petition:
+    type: misc  # setting this to post breaks it
+    title: Please sign the petition against the forced use of Adobe Creative Cloud
+    author: Zenzel, Dan @dzenzel
+    date: 2013-05-11
+    parent:
+        type: blog
+        title: Twitter
+    url:
+        value: https://x.com/dzenzel/status/333420890664620033
+        date: 2025-12-02
