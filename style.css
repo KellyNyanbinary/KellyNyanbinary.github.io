@@ -1,6 +1,7 @@
 /* Import font */
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Color variables */
 
@@ -44,18 +45,60 @@
   }
 }
 
+html[data-theme="light"] {
+  --text-heading: oklch(20.00% 0.036 66.22);
+  --text: oklch(25.00% 0.027 66.22);
+  --background: oklch(100.00% 0.000 0);
+  --background-secondary: oklch(97.00% 0.000 0);
+  --border: oklch(80.00% 0.000 0.00);
+  --shadow: oklch(00.00% 0.000 0.00);
+  --primary: oklch(73.19% 0.186 52.98);
+  --secondary: oklch(86.36% 0.063 67.00);
+  --accent: oklch(86.41% 0.083 230.61);
+  --link: oklch(55.00% 0.083 230.61);
+
+  --shadow-radius-shallow: 2px;
+  --shadow-radius-medium: 4px;
+  --shadow-radius-heavy: 6px;
+  --shadow-radius-deep: 8px;
+}
+
+html[data-theme="dark"] {
+  --text-heading: oklch(95.00% 0.036 66.22);
+  --text: oklch(90.00% 0.027 66.22);
+  --background: oklch(0.00% 0.000 0.00);
+  --background-secondary: oklch(20.00% 0.000 0.00);
+  --border: oklch(30% 0.000 0.00);
+  --shadow: oklch(80% 0.000 0.00);
+  --primary: oklch(73.19% 0.186 52.98);
+  --secondary: oklch(35.19% 0.063 67.00);
+  --accent: oklch(36.80% 0.083 230.61);
+  --link: oklch(58% 0.083 230.61);
+
+  --shadow-radius-shallow: 4px;
+  --shadow-radius-medium: 6px;
+  --shadow-radius-heavy: 8px;
+  --shadow-radius-deep: 10px;
+}
+
 /* Other variables */
 :root {
   --margin-primary: 2rem;
   --border-radius-small: 4px;
   --border-radius-medium: 8px;
   --border-radius-large: 16px;
+
+  --font-body: "JetBrains Mono", monospace;
+}
+
+html[data-font="atkinson"] {
+  --font-body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }
 
 /* Global properties */
 :root {
   background-color: var(--background);
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-body);
 }
 
 html,
@@ -120,6 +163,19 @@ main {
   text-overflow: ellipsis;
 }
 
+.secondarypagetitle .toggles,
+.maintitle .toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.toggles .toggle-sep {
+  margin: 0 0.25rem;
+}
+
 /* Headings */
 
 h1 {
@@ -151,7 +207,7 @@ p {
 
 /* Navbar */
 
-.current {
+[aria-current="page"] {
   font-weight: bold;
 }
 
@@ -179,10 +235,10 @@ a {
   text-decoration: underline;
   text-decoration-color: transparent;
 
-  transition: text-decoration-color 0.2s ease-in-out, border 0.1s ease-in-out
+  transition: text-decoration-color 0.2s ease-in-out, border 0.1s ease-in-out;
 }
 
-a.current {
+a[aria-current="page"] {
   color: var(--text);
 }
 
@@ -191,7 +247,7 @@ a:focus-visible {
   text-decoration-color: var(--link);
 }
 
-a.current:hover {
+a[aria-current="page"]:hover {
   text-decoration-color: var(--text);
 }
 
@@ -210,7 +266,7 @@ input {
 
   color: var(--text);
 
-  transition: box-shadow 0.1s ease-in-out, border-color 0.1s ease-in-out
+  transition: box-shadow 0.1s ease-in-out, border-color 0.1s ease-in-out;
 }
 
 input:hover {
