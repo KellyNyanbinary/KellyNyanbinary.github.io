@@ -1,2 +1,7 @@
 # macOS file
 .DS_store
+.venv/
+
+# Build output
+dist/
+__pycache__/
