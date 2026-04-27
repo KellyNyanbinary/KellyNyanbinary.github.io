@@ -1,117 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" xml:lang="en">
+  <head>
+    <title>KellyNyanbinary</title>
 
-<head>
-  <title>KellyNyanbinary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Password Strength Checker" />
+    <meta
+      property="og:description"
+      content="Online web app for checking the strength of passwords"
+    />
+    <meta
+      property="og:url"
+      content="https://kellynyanbinary.com/webapps/passwordstrength"
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/KellyNyanbinary/KellyNyanbinary.github.io/blob/main/Assets/favicon.png?raw=true"
+    />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Password Strength Checker" />
-  <meta property="og:description" content="Online web app for checking the strength of passwords" />
-  <meta property="og:url" content="https://kellynyanbinary.com/webapps/passwordstrength" />
-  <meta property="og:image"
-    content="https://github.com/KellyNyanbinary/KellyNyanbinary.github.io/blob/main/Assets/favicon.png?raw=true" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
 
-  <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link
+      rel="icon"
+      href="https://github.com/KellyNyanbinary/KellyNyanbinary.github.io/blob/main/Assets/favicon.png?raw=true"
+    />
 
-  <link rel="icon"
-    href="https://github.com/KellyNyanbinary/KellyNyanbinary.github.io/blob/main/Assets/favicon.png?raw=true" />
+    <style>
+      .mjx-inline {
+        display: inline-block;
+        text-align: center;
+      }
+    </style>
+  </head>
 
-  <style>
-    .mjx-inline {
-      display: inline-block;
-      text-align: center;
-    }
-  </style>
-</head>
+  <script src="password-strength.js"></script>
+  <script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  ></script>
 
-<script src="password-strength.js"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
-<body>
-  <section class="secondarypagetitle">
-    <h1>Password Strength Checker</h1>
-  </section>
-
-  <main>
-    <section
-      style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; ">
-      <div>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
-      </div>
-      <p id="password-characters" style="display: inline-block; margin-top: 1rem; text-align: right;">
-        Lowercase letters &#10060<br>
-        Uppercase letters &#10060<br>
-        Numerical digits &#10060<br>
-        Special characters &#10060<br>
-      </p>
-      <p id="password-strength" style="min-height: 6rem; ">
-        Enter a password to see expected time to guess.
-      </p>
+  <body>
+    <section class="secondarypagetitle">
+      <h1>Password Strength Checker</h1>
     </section>
-    <section>
-      <h2>How the Password Strength Calculation Works</h2>
-      <p>
-        This password strength calculator estimates how long a password would take to be brute-force guessed, assuming
-        the guessing rate <b>doubles every two years</b>, following an interpretation of Moore's Law. Furthermore, it
-        considers the cumulative count of every guess made over time rather than just the current guess rate. The
-        initial guess rate is 500,000 guesses per second, based on
-        <a href="https://openbenchmarking.org/test/pts/john-the-ripper" target="_blank" rel="noopener noreferrer">Phoronix OpenBenchmarking</a>'s
-        John the Ripper benchmarks on a high-end server.
-      </p>
-      <p>
-        The number of possibilities for the password is given by
-        <span class="mjx-inline" style="width: 6ch;">\( p = c^{l}\)</span>,
-        where <span class="mjx-inline" style="width: 1ch;">\( c \)</span> is the character set size
-        and <span class="mjx-inline" style="width: 1ch;">\( l \)</span> is the password length. This value is used to
-        estimate the expected time to take to guess the password in years using a modified <a
-          href="https://www.wolframalpha.com/input?i=2%2Fln%282%29+*+a+*+2%5E%28x+%2F+2%29+%3D+b"
-          target="_blank" rel="noopener noreferrer">formula from Wolfram Alpha</a>:
-      <div style="max-width: 100%; font-size: min(3.0vw, 1em);">
-        \[
-        y = m \cdot 1.4427 \cdot \ln \left( \frac{0.693146 \cdot p / 2}{r \cdot m} + 1 \right),
-        \]
-      </div>
-      where <span class="mjx-inline" style="width: 1ch;">\( r \)</span> is the initial guessing rate per year, and <span
-        class="mjx-inline" style="width: 2ch;">\( m \)</span> represents the doubling period of the guessing
-      rate in years. The term <i>expected</i> refers to the average time required to guess half of all possible
-      passwords (<span class="mjx-inline" style="width: 4ch;">\( p / 2 \)</span>). In practice, this distinction is
-      negligible due to the exponential growth of the cumulative guesses.
-      </p>
-      <p>
-        The valid characters in this password strength checker are the 95 ASCII text characters and the space character:
-      </p>
-      <div class="code-block">
-        <pre style="margin: 0"><code>abcdefghijklmnopqrstuvwxyz<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ</code></pre>
-        <pre style="margin: 0"><code>1234567890<br>!"#$%&'()*+,-./:<=>?@[\]^_`{|}~</code></pre>
-      </div>
-    </section>
-    <section>
-      <h2>Security</h2>
-      <p>
-        This web app <strong>does NOT send the password to a server</strong> for strength calculation. All computation
-        is performed locally.
-      </p>
-    </section>
-    <section>
-      <h2>Limitations</h2>
-      <p>
-        This program has a hard-coded starting guessing rate and a hard-coded guessing rate doubling time scale. It also
-        ignores password-guessing techniques such as dictionary lookup. The program's output is not guaranteed to be
-        correct, and correctly predicting the future is impossible.
-      </p>
-    </section>
-  </main>
 
-  <footer>
-    <hr>
-    <p>&copy;2026 Kelly Wu. Licensed under <a
-        href="https://github.com/KellyNyanbinary/KellyNyanbinary.github.io/blob/main/license.md" target="_blank" rel="noopener noreferrer">BSD
-        3-Clause License</a>.</p>
-  </footer>
-</body>
+    <main>
+      <section
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        "
+      >
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <p
+          id="password-characters"
+          style="display: inline-block; margin-top: 1rem; text-align: right"
+        >
+          Lowercase letters &#10060;<br />
+          Uppercase letters &#10060;<br />
+          Numerical digits &#10060;<br />
+          Special characters &#10060;<br />
+        </p>
+        <p id="password-strength" style="min-height: 6rem">
+          Enter a password to see expected time to guess.
+        </p>
+      </section>
+      <section>
+        <h2>How the Password Strength Calculation Works</h2>
+        <p>
+          This password strength calculator estimates how long a password would
+          take to be brute-force guessed, assuming the guessing rate
+          <b>doubles every two years</b>, following an interpretation of Moore's
+          Law. Furthermore, it considers the cumulative count of every guess
+          made over time rather than just the current guess rate. The initial
+          guess rate is 500,000 guesses per second, based on
+          <a
+            href="https://openbenchmarking.org/test/pts/john-the-ripper"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Phoronix OpenBenchmarking</a
+          >'s John the Ripper benchmarks on a high-end server.
+        </p>
+        <p>
+          The number of possibilities for the password is given by
+          <span class="mjx-inline" style="width: 6ch">\( p = c^{l}\)</span>,
+          where <span class="mjx-inline" style="width: 1ch">\( c \)</span> is
+          the character set size and
+          <span class="mjx-inline" style="width: 1ch">\( l \)</span> is the
+          password length. This value is used to estimate the expected time to
+          take to guess the password in years using a modified
+          <a
+            href="https://www.wolframalpha.com/input?i=2%2Fln%282%29+*+a+*+2%5E%28x+%2F+2%29+%3D+b"
+            target="_blank"
+            rel="noopener noreferrer"
+            >formula from Wolfram Alpha</a
+          >:
+        </p>
+        <div style="max-width: 100%; font-size: min(3vw, 1em)">
+          \[ y = m \cdot 1.4427 \cdot \ln \left( \frac{0.693146 \cdot p / 2}{r
+          \cdot m} + 1 \right), \]
+        </div>
+        <p>
+          where <span class="mjx-inline" style="width: 1ch">\( r \)</span> is
+          the initial guessing rate per year, and
+          <span class="mjx-inline" style="width: 2ch">\( m \)</span> represents
+          the doubling period of the guessing rate in years. The term
+          <i>expected</i> refers to the average time required to guess half of
+          all possible passwords (<span class="mjx-inline" style="width: 4ch"
+            >\( p / 2 \)</span
+          >). In practice, this distinction is negligible due to the exponential
+          growth of the cumulative guesses.
+        </p>
+        <p>
+          The valid characters in this password strength checker are the 95
+          ASCII text characters and the space character:
+        </p>
+        <div class="code-block">
+          <pre
+            style="margin: 0"
+          ><code>abcdefghijklmnopqrstuvwxyz<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ</code></pre>
+          <pre
+            style="margin: 0"
+          ><code>1234567890<br>!"#$%&'()*+,-./:<=>?@[\]^_`{|}~</code></pre>
+        </div>
+      </section>
+      <section>
+        <h2>Security</h2>
+        <p>
+          This web app
+          <strong>does NOT send the password to a server</strong> for strength
+          calculation. All computation is performed locally.
+        </p>
+      </section>
+      <section>
+        <h2>Limitations</h2>
+        <p>
+          This program has a hard-coded starting guessing rate and a hard-coded
+          guessing rate doubling time scale. It also ignores password-guessing
+          techniques such as dictionary lookup. The program's output is not
+          guaranteed to be correct, and correctly predicting the future is
+          impossible.
+        </p>
+      </section>
+    </main>
 
+    <footer>
+      <hr />
+      <p>
+        &copy;2026 Kelly Wu. Licensed under
+        <a
+          href="https://github.com/KellyNyanbinary/KellyNyanbinary.github.io/blob/main/license.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          >BSD 3-Clause License</a
+        >.
+      </p>
+    </footer>
+  </body>
 </html>
